@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Train-o-dino</title>
+        <style>
+            body {
+                height: 100vh;
+                margin: 0;
+                background-color:rgb(223, 223, 223);
+                position: relative;
+            }
+            .btnContainer {
+                position: absolute;
+                left: 33%;
+                top: 33%;
+                justify-content: center;
+                text-align: center;
+
+            }
+            .gameBtn {
+                text-align: center;
+                border: 2px dashed rgb(71, 72, 109);
+                padding: 50px;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="btnContainer">
+            <button id="manual" class="gameBtn">Manual Game</button>
+            <button id="automatic" class="gameBtn">Automatic Game</button>
+        </div>
+    </body>
+    <script>
+        document.getElementById("manual").addEventListener('click', () => {
+            location.href ="/manual"
+        });
+        document.getElementById("automatic").addEventListener('click', () => {
+            location.href ="/automatic"
+        })
+    </script>
+</html>
